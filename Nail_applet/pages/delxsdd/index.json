@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "modal": "mini-ali-ui/es/modal/index",
+    "stepper": "mini-ali-ui/es/stepper/index",
+    "am-swipe-action": "mini-ali-ui/es/swipe-action/index",
+    "list": "mini-ali-ui/es/list/index",
+    "list-item": "mini-ali-ui/es/list/list-item/index",
+    "tag": "mini-ali-ui/es/tag/index",
+    "am-icon": "mini-ali-ui/es/am-icon/index",
+    "input-item": "mini-ali-ui/es/input-item/index",
+    "picker-item": "mini-ali-ui/es/picker-item/index"
+  }
+}

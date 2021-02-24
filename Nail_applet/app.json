@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/xsorder_list/order_list",
+    "pages/zwdw/zwdw",
+    "pages/delxsdd/index"
+  ],
+  "window": {
+    "defaultTitle": "销售下单",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": "NO"
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "image/xszd1.png",
+        "activeIcon": "image/xszd.png",
+        "name": "销售制单"
+      },
+      {
+        "pagePath": "pages/xsorder_list/order_list",
+        "icon": "image/list.png",
+        "activeIcon": "image/list.png",
+        "name": "销售列表"
+      }
+    ]
+  },
+  "debug": true
+}

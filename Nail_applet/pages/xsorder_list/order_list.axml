@@ -1,0 +1,6 @@
+<import src="../components/xslist/index.axml" />
+
+<view>
+  <view a:if={{order_sl == 0}} class="a-list-item-extra" >暂无单据信息!!</view>
+  <template is="List" data={{...listData}} />
+</view>

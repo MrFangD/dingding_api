@@ -1,0 +1,45 @@
+<import src="../components/list/index.axml"></import>
+<view class="page">
+  <form onSubmit="onSubmit" onReset="onReset">
+  <list>
+    <view onTap="onFocus"><input-item data-field="zwdw" type="text" value="{{zwdw}}" disabled="1">销售客户</input-item></view>
+    <input-item data-field="zgxm" type="text" value="{{zgxm}}" disabled="1">业务员</input-item>
+    <input-item data-field="date" value="{{dateValue}}" disabled="1">业务日期</input-item>
+    <picker-item data-field="bank" placeholder="" value="{{bank}}" onPickerTap="onPickerTap">
+      业务类型
+    </picker-item>
+    <input-item data-field="bz" type="text" value="{{bz}}" onInput="bindKeyInput">备注</input-item>
+    <view onTap="onFocus_wl"><input-item data-field="cardNo" className="dadada" disabled="1">
+      商品
+    </input-item>
+    </view>
+  </list>
+  
+    <view style="margin-top: 10px;"></view>
+    <view class="page-section" style="margin-bottom: 46px;">
+      <view class="page-section-title">物料信息</view>
+      <view class="page-section-demo">
+        <template is="List" data="{{...listData}}"></template>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="page-section-btns" style="position:fixed; bottom:0;width: 740rpx;">
+        <view>
+          <button type="ghost" size="mini" formType="reset">重置</button>
+        </view>
+        <view>
+          <button type="primary" size="mini" formType="submit">保存</button>
+        </view>
+      </view>
+    </view>
+    <modal show="{{modalOpened}}" showClose="{{false}}" onMaskClick="onMaskClick" onModalClick="onModalClick" onButtonClick="onButtonClick" buttons="{{buttons}}">
+		      <view>{{lswlmc}}</view>
+          <list-item disabled="{{true}}">数量
+            <view slot="extra">
+              <stepper step="{{1}}" showNumber readOnly="{{false}}" value="{{wlsl}}" inputWidth="60px" min="{{0}}" onChange="onChangeSl"/>
+            </view>
+          </list-item>
+          <!-- <button type="primary" onTap="oncheck" extClass='buttonBold'>确定</button> -->
+	      </modal>
+  </form>
+</view>

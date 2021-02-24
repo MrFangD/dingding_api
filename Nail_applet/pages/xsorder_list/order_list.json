@@ -1,0 +1,10 @@
+{
+ "defaultTitle": "销售列表",
+ "usingComponents": {
+   "modal": "mini-ali-ui/es/modal/index",
+   "stepper": "mini-ali-ui/es/stepper/index",
+   "list": "mini-ali-ui/es/list/index",
+   "list-item": "mini-ali-ui/es/list/list-item/index",
+   "tag": "mini-ali-ui/es/tag/index"
+ }
+}

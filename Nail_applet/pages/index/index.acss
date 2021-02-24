@@ -1,0 +1,24 @@
+@import '../components/list/index.acss';
+button + button {
+  margin-top: 32rpx;
+}
+.extra {
+
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/dOfSJfWQvYdvsZiJStvg.svg');
+
+  background-size: contain;
+
+  background-repeat: no-repeat;
+
+  background-position: right center;
+
+  opacity: 0.2;
+
+  height: 22px;
+
+  width: 22px;
+
+}
+.am-list-content{
+  flex:2
+}
